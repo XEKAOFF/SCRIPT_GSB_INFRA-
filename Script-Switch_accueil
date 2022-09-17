@@ -1,0 +1,21 @@
+------------GSB_INFRA -------------------------
+int vlan134
+ip add 10.187.35.32 255.255.255.0
+no shutdown
+
+
+– Configuration de la connection SSH
+
+ip domain-name 0870019y.lan
+username btssio password btssio
+crypto key generate rsa 
+ip ssh version 2
+ip ssh time-out 50
+ip ssh authentication-retries 10
+line vty 0 4
+transport input ssh 
+login local
+logging synchronous 
+exit
+
+-----------------------------------------
