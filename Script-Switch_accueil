@@ -1,4 +1,21 @@
 ------------GSB_INFRA -------------------------
+------------GSB-STORMSHIELD--------------------
+
+PORT 8 STORMSHIELD ip 10.0.0.254/24
+PORT SWITCH 
+FA0/4 >OUT /1
+FA0/03 >DMZ1 /3
+FA0/5 >DMZ2 /4
+FA0/1 >DMZ3 /5
+
+
+
+
+
+-----------------------------------------------
+
+MDP SWITCH: corentin
+
 int vlan134
 ip add 192.168.229.64 255.255.255.0
 no shutdown
