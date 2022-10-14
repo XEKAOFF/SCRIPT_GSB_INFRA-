@@ -12,7 +12,7 @@ nano /etc/dhcp/dhcpd.conf
 
 ------------GSB-STORMSHIELD--------------------
 
-PORT 8 STORMSHIELD ip 10.0.0.254/24
+PORT 5 STORMSHIELD ip 10.0.0.254/24
 PORT SWITCH 
 FA0/4 >OUT /1
 FA0/03 >DMZ1 /3
