@@ -4,6 +4,9 @@
 Adresse IP Srv DHCP: 359
 User: root
 MDP: corentin
+----------GSB_COMMANDE-------------------------
+apt install isc-dhcp-server
+nano /etc/dhcp/dhcpd.conf
 -----------------------------------------------
 
 
