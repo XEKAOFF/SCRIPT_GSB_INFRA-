@@ -20,7 +20,10 @@ FA0/5 >DMZ2 /4
 FA0/1 >DMZ3 /5
 connexion VIA WIFI 10.187.35.47
 
-
+Port numéro 1 = OUT (sortie) = Vlan Sortie 309 = 192.168.230.72/28
+Port numéro 2 = IN (entrée) = Vlan (accueil ) 309 = 192.168.229.65/27
+Port numéro 3 = DMZ1 = Vlan Serveur = 192.168.228.71/26
+Port numéro 4 = DMZ2 = Vlan Wifi = 10.187.35.47/24
 
 
 -----------------------------------------------
