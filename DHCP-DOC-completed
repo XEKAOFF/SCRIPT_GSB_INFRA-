@@ -1,0 +1,27 @@
+------------------DHCP_DOCUMENTATION---------------------------
+
+Installation du service DHCP
+
+DHCP:~# apt install isc-dhcp-server
+Configuration du service DHCP
+DHCP:~# nano /etc/dhcp/dhcpd.conf
+#Les element a changer dans le fichier .conf du DHCP 
+# option definitions common to all supported networks...
+- option domain-name "GSB.local";
+- option domain-name-servers 8.8.8.8;
+# A slightly different configuration for an internal subnet.
+-subnet 10.5.5.0 netmask 255.255.255.224 {
+- range 10.5.5.26 10.5.5.30;
+- option domain-name-servers ns1.internal.example.org;
+-  option domain-name "internal.example.org";
+-  option routers 10.5.5.1;
+-  option broadcast-address 10.5.5.31;
+-  default-lease-time 600;
+-  max-lease-time 7200;
+#}
+
+
+
+<img src="https://cdn.discordapp.com/attachments/491854415322546178/1033039375065415780/Screenshot_2022-10-21_at_17.29.13.png"
+     alt="DHCP DOC "
+     style="float: left; margin-right: 10px;" />
