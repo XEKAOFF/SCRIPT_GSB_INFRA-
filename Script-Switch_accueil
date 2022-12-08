@@ -8,8 +8,9 @@ MDP: corentin
 apt install isc-dhcp-server
 nano /etc/dhcp/dhcpd.conf
 -----------------------------------------------
-
-
+              PASSWORD LIST
+ mdp SNS: corentin
+ 
 ------------GSB-STORMSHIELD--------------------
 
 PORT 5 STORMSHIELD ip 10.0.0.254/24
